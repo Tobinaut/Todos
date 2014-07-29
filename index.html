@@ -16,7 +16,7 @@
 
         <section id="main">
           {{outlet}}
-          
+
           {{input id="toggle-all" type="checkbox" checked=toggleAllCompleted}}
         </section>
 
@@ -26,14 +26,14 @@
           </span>
           <ul id="filters">
             <li>
-            <a href="all" class="selected">All</a>
-          </li>
-          <li>
-            {{#link-to "todos.active" activeClass="selected"}}Active{{/link-to}}
-          </li>
-          <li>
-            <a href="completed">Completed</a>
-          </li>
+              <a href="all" class="selected">All</a>
+            </li>
+            <li>
+              {{#link-to "todos.active" activeClass="selected"}}Active{{/link-to}}
+            </li>
+            <li>
+              {{#link-to "todos.completed" activeClass="selected"}}Completed{{/link-to}}
+            </li>
           </ul>
 
           <button id="clear-completed">
